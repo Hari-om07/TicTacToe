@@ -1,0 +1,45 @@
+body
+{
+    background: linear-gradient(270deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(80px, 1fr));
+    grid-gap: 5px;
+    margin: 20px auto;
+    border: 15px solid rgb(255, 255, 255);
+    width: 90vw; /* 90% of the viewport width */
+    max-width: 315px; /* Maximum width for larger screens */
+    height: 90vw; /* 90% of the viewport width */
+    max-height: 315px;
+    background: rgba(1, 1, 1, 0.5)
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aqua;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#restartBtn {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: rgb(62, 62, 62);
+}
